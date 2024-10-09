@@ -1,0 +1,298 @@
+https://docs.google.com/document/d/1ze8JTiMEELyMM7iooONIAtKEk7ZT394d47mFQurkGTo/edit?usp=sharing
+
+Dificuldade de Atendimento a Clientes com Entregas por Motoboy
+
+Introdução
+A LAP	 Informática é uma empresa de Juiz de Fora que oferece serviços de entrega rápida utilizando motoboys. A empresa tem como objetivo fortalecer o comércio local ao proporcionar soluções ágeis para o transporte de mercadorias. Contudo, o processo atual de atendimento e cálculo de frete, realizado por telefone, está sobrecarregado e dificultando a prestação de um serviço eficiente. O desafio é encontrar uma solução que melhore o atendimento e otimize o cálculo e a execução das entregas.
+
+Problema
+Atualmente, os atendentes da LAP Informática calculam o valor do frete manualmente, com base em três fatores: peso da mercadoria, distância e tempo estimado de entrega. Esse processo depende do conhecimento dos atendentes e, por ser manual, é demorado e propenso a erros. A grande quantidade de solicitações via telefone tem gerado atrasos, resultando em dificuldade para atender todos os clientes de maneira rápida e eficaz.
+
+Objetivos da Solução
+A solução deve permitir à LAP:
+- Facilitar o processo de contratação dos serviços de transporte.
+- Oferecer uma plataforma que calcule automaticamente o custo e o tempo de entrega com base em dados precisos.
+- Melhorar a eficiência do atendimento, permitindo que mais clientes sejam atendidos com rapidez e precisão.
+- Otimizar o processo de transporte, possibilitando um aumento de agilidade nas entregas.
+
+Benefícios Esperados
+- Automatização do Cálculo de Frete: A introdução de um sistema que calcula o custo do frete com base em parâmetros como peso, distância e tempo, eliminando a necessidade de cálculos manuais e minimizando erros.
+- Facilidade de Acesso: Uma plataforma digital onde clientes possam solicitar e acompanhar entregas, agilizando a comunicação entre cliente, motoboy e a empresa.
+- Melhor Gestão dos Motoboys: Um painel para os motoboys visualizarem e aceitarem entregas, bem como monitorarem seu histórico de corridas e ganhos.
+- Agilidade no Atendimento: A redução do tempo necessário para processar pedidos permitirá que a LAP atenda um maior volume de clientes.
+
+Detalhamento do Processo Atual
+Hoje, o atendimento da LAP ocorre da seguinte forma:
+1. O cliente liga para a empresa.
+2. Informa o peso da mercadoria e CEP de origem e destino.
+3. O atendente consulta três tabelas para calcular o valor do frete:
+   - Peso da mercadoria.
+   - Distância percorrida.
+   - Tempo estimado de deslocamento.
+4. O valor final é calculado com base na soma dos valores de cada fator, com exemplo de uma entrega de 7 Kg a 10 Km, que custa R$17,00.
+
+Esse processo é lento e, com o aumento da demanda, está gerando insatisfação entre os clientes, pois a empresa não consegue atender a todos em tempo hábil.
+
+Proposta de Solução
+A solução proposta é o desenvolvimento de um **sistema informatizado**, que deverá incluir as seguintes funcionalidades:
+
+- Cálculo Automático de Frete: O sistema deverá permitir o cálculo instantâneo do valor do frete com base em parâmetros como peso, distância e tempo de deslocamento, com possibilidade de ajustes futuros.
+  
+- Interface para Clientes: Um painel onde os clientes poderão:
+  - Solicitar entregas.
+  - Acompanhar o status das suas encomendas (nome e foto do motoboy, horário de início e previsão de entrega).
+  - Acessar via smartphone.
+
+- Interface para Motoboys: Um painel exclusivo para motoboys, onde eles poderão:
+  - Visualizar as entregas disponíveis.
+  - Aceitar as corridas de interesse.
+  - Ver os detalhes da entrega (bairro de origem e destino, tempo e distância estimados, valor a receber).
+  - Acompanhar seu histórico de entregas e ganhos.
+
+- Interface para Administradores: Um painel de controle restrito para a administração, onde será possível:
+  - Acompanhar todas as entregas (status, motoboys, clientes).
+  - Gerenciar os parâmetros de cálculo do frete.
+
+Restrições
+- Orçamento: A solução deve respeitar o teto de investimentos de R$ 10.000,00.
+- Limites Operacionais: O sistema não poderá oferecer transporte de mercadorias acima de 12 Kg.
+
+Tabelas de Cálculo
+
+Tabela de Valor por Peso
+
+
+
+Peso da Mercadoria
+Valor
+Menos de 1Kg 
+R$3,00 
+Entre 1Kg e 3Kg
+R$5,00
+Entre 3Kg e 8Kg
+R$9,00
+Entre 8Kg e 12Kg
+R$12,00
+Acima de 12Kg 
+Não é possível transportar
+
+
+
+
+Tabela de Preço por Km Rodado
+
+Distância (Km)
+Valor por Km 
+1 Km 
+R$0,50
+
+
+
+Tabela de Preço por Tempo de Deslocamento
+
+Tempo (min)
+Valor por Minuto
+1 minuto 
+R$0,30   
+
+
+
+Considerações Finais
+A implementação de um sistema informatizado pode transformar a maneira como a LAP atende seus clientes, automatizando o processo de cálculo de frete e oferecendo um serviço mais ágil e preciso. A solução não apenas permitirá que a empresa atenda mais clientes com maior rapidez, mas também garantirá um controle mais eficiente das operações de entrega, trazendo benefícios tanto para os clientes quanto para os motoboys.
+
+
+
+FUNCIONALIDADES
+[RF01.1] Cadastro de usuário ou administrador
+[RF01.2] Login de usuário ou administrador
+[RF02] Interface de pedido online
+[RF02.1]Cálculo automático de frete baseado em distância, peso e tempo
+[RF03] Sistema de acompanhamento de entrega em tempo real
+[RF04] Notificações por SMS ou e-mail para atualizações de status
+[RF05.1]Integração com mapas para otimização de rotas
+[RF05.2]] Relatório de desempenho de entregas e feedback dos clientes
+
+
+DESCRIÇÃO DE CASOS DE USO
+Identificação 
+[RF01]
+Descrição 
+Ao acessar o aplicativo,deve aparecer a página de cadastro onde o usuário deve colocar a sua conta para ter acesso ao aplicativo,deve conter o “Email” e “Senha” para os usuários usarem a suas contas e logo abaixo um dois botões um de “Login” e outro de “Criar Conta”
+Atores 
+Usuário,Administrador
+Pré-condições 
+
+
+Fluxo principal 
+1 – Usuário acessa o aplicativo; 
+
+
+
+Identificação 
+[RF01.1]
+Descrição 
+Página de cadastro, do lado direito encontram-se os campos de cadastro “Nome completo”, ”cpf”, “Email”,”Senha”,”Confirmar Senha” e “Número de telefone”.
+
+
+Atores 
+Usuário, Administrador
+Pré-condições 
+1 - ao clicar no botão de cadastrado no sistema.
+Fluxo principal 
+1 - Usuário preenche os campos de cadastro clica no botão e é redirecionado para página inicial.
+2 - Usuário preenche com as credenciais de administrador e é redirecionado para a página de inicial, ou para página de cadastro
+Fluxo secundário 
+1 - O usuário pode clicar na política de privacidade e nos termos de serviço para ter ciência de como seus dados serão utilizados e a política de privacidade adotada no site, bem como os termos de uso.
+
+2 - Usuário clica em botão para alternar para página de login.
+
+
+
+
+
+
+
+
+Identificação 
+[RF02]
+Descrição 
+Cria uma plataforma onde os clientes podem selecionar produtos e serviços para entrega. A interface deve ser intuitiva, permitindo filtrar produtos, visualizar detalhes e adicionar itens ao carrinho. Um resumo do pedido deve ser mostrado antes da finalização.
+Atores 
+Usuário
+Pré-condições 
+1 -logado no site
+
+2 -acessar a página de pedidos
+Fluxo principal 
+1 - Usuário preenche os campos de Login e é redirecionado para a página inicial
+
+
+
+
+
+
+Identificação 
+[RF02.1]
+Descrição 
+Realiza o cálculo do custo de frete de forma automática, considerando a distância entre a origem e o destino, assim como o peso dos produtos. O sistema deve ser capaz de atualizar o cálculo conforme as variáveis mudam.
+Atores 
+Usuário
+Pré-condições 
+   1 - Cadastrado e logado no sistema
+
+   2 - preencher todas as informações necessárias(escolher o produto e indicar o local da entrega) 
+Fluxo principal 
+1 – Usuário acessa a página;
+
+2 – Seleciona o pedido 
+
+
+
+Identificação 
+[RF03]
+Descrição 
+Os usuários têm a possibilidade de acompanhar a localização de seus produtos em tempo real por meio de um sistema de rastreamento integrado. Essa funcionalidade permite que verifiquem a posição do motoboy durante todo o trajeto, recebendo atualizações instantâneas sobre o progresso da entrega. Além disso, notificações podem ser enviadas quando o motoboy está a poucos minutos de chegar, proporcionando uma experiência mais tranquila e conveniente.
+
+
+Atores 
+Usuário
+Pré-condições 
+1 - Cadastrado e logado no sistema 
+2 - Ter realizado o pedido
+Fluxo principal 
+1 –Usuário acessa a página de pedidos
+
+2 –Selecionar e confirmar o pedido
+
+
+
+
+Identificação 
+[RF04]
+Descrição 
+Envia notificações automáticas aos clientes sobre o progresso de suas entregas. Isso pode incluir confirmação de pedido, aviso de saída para entrega, e notificação quando a entrega for realizada.
+Atores 
+Administrador
+Pré-condições 
+Fluxo principal 
+1 - Cadastrado e logado no sistema 
+2 – Ter realizado o pedido.
+
+
+
+Identificação 
+[RF05.1]
+Descrição 
+Íntegra APIs de serviços de mapeamento para fornecer rotas em tempo real e otimizar as entregas. O sistema deve recalcular rotas automaticamente em caso de desvios ou atrasos..
+Atores 
+Administrador
+Pré-condições 
+1 - Cadastrado e logado no sistema
+
+2 - O Motoboy aceita o pedido
+Fluxo principal 
+1 – O administrador preenche os campos de texto e clica no botão “Enviar”.
+Fluxo secundário 
+1 - Redirecionado para página de agenda.
+
+
+
+Identificação 
+[RF05.2]
+Descrição 
+Gera relatórios detalhados sobre o desempenho das entregas, como tempo médio de entrega e taxas de sucesso. Além disso, coleta feedback dos clientes após a entrega para identificar pontos de melhoria.
+Atores 
+Administrador,usuários
+Pré-condições 
+1 - Cadastrado e logado no sistema
+
+2 -Após a entrega ser realizada
+Fluxo principal 
+1 –O usuário faz o pedido
+
+2 - O Motoboy aceita a entrega
+
+3- O Motoboy realiza a entrega
+
+
+
+
+
+REQUISITOS NÃO FUNCIONAIS
+Identificador 
+RNF 01
+Categoria 
+Segurança
+Nome 
+protocolo de segurança da internet
+Prioridade 
+essencial
+Descrição 
+Adotar protocolo HTTPS para garantir segurança e privacidade aos usuários do sistema, observando as camadas de criptografia, integridade de dados e autenticação
+
+
+
+Identificador 
+RNF 02
+Categoria 
+Segurança e confiabilidade
+Nome 
+hospedagem em nuvem
+Prioridade 
+importante
+Descrição 
+Garantir que o banco de dados e o sistema esteja hospedado em um servidor em nuvem com backups sendo feito regularmente para minimizar o impacto de possível ataque.
+
+
+
+Identificador 
+RNF 03
+Categoria 
+Usabilidade
+Nome 
+Boas práticas de acessibilidade
+Prioridade 
+Desejável
+Descrição 
+Garantir boas práticas de acessibilidade em HTML para proporcionar melhor compreensão de leitura por leitores de tela e melhor desempenho em mecanismos de busca.
+
