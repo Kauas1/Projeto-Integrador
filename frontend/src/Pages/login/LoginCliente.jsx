@@ -226,7 +226,7 @@ function Login() {
 
     if (userData?.email === email && userData?.senha === senha) {
       alert('Login realizado com sucesso!');
-      navigate('/'); 
+      navigate('/home'); 
     } else {
       alert('Credenciais inválidas. Por favor, tente novamente.');
     }
