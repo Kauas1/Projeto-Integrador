@@ -16,6 +16,7 @@ const Section = styled.div`
 `;
 
 const Title = styled.h2`
+  padding-left: 3rem;
   margin-bottom: 20px;
 `;
 

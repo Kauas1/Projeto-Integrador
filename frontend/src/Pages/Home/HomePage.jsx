@@ -7,14 +7,21 @@ import Headerr from "./Headerr.jsx";
 
 const Title = styled.h2`
   margin-bottom: 20px;
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-left: 50px;
 `;
 
 const RestaurantList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 50px;
   padding: 10px 0;
-
+  padding-left: 5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 15px;
@@ -34,6 +41,9 @@ const RestaurantCard = styled(Link)`
   color: inherit;
   text-align: center;
   transition: transform 0.2s;
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 10px;
@@ -54,6 +64,7 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
 `;
 
 function HomePage() {
@@ -61,7 +72,7 @@ function HomePage() {
     { id: 1, name: "McDonald's", logo: "🍔" },
     { id: 2, name: "Burguer King", logo: "👑" },
     { id: 3, name: "Pizza Gutti", logo: "🍕" },
-    { id: 4, name: "Dona Gera", logo: "🍲" },
+    { id: 4, name: "Dona Geni", logo: "🍲" },
     { id: 5, name: "Fika Frio", logo: "🥤" },
   ];
 

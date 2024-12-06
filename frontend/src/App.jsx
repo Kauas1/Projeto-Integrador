@@ -53,11 +53,11 @@ function App() {
             <Routes>
               <Route path="/confirmacao" element={<FeedbackModal />} />
               <Route path="/avaliacao" element={<StarRatingModal />} />
-              <Route path="/" element={<HomePage />} />
+              <Route path="/home" element={<HomePage />} />
               <Route path="/restaurant/:id" element={<RestaurantPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
               <Route path="/calculadora" element={<Calculadora />} />
-              <Route path="/cadastro-cliente" element={<CadastroCliente />} />
+              <Route path="/" element={<CadastroCliente />} />
               <Route path="/cadastro-empresa" element={<CadastroEmpresa />} />
               <Route path="/cadastro-motoboy" element={<CadastroMotoboy />} />
               <Route path="/login-cliente" element={<LoginCliente />} />

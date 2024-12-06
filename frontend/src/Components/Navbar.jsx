@@ -18,7 +18,7 @@ const Nav = styled.nav`
 const NavItem = styled.div`
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 30px 20px;
   color: white;
   cursor: pointer;
   transition: background-color 0.2s;
